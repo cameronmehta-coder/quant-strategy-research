@@ -12,6 +12,8 @@ Built in Python with free daily data (yfinance), by Cameron Mehta.
 | Low-volatility US equities | Kakushadze & Serur 3.4; Blitz & van Vliet (2018) | 2 | **Closed.** Own backtest failed but was biased by survivorship; real low-vol funds (SPLV, USMV) confirmed it: Sharpe 0.65-0.79 vs SPY 0.82 since 2011, alpha about zero. |
 | IBS mean reversion on the S&P 500 | Kakushadze & Serur 4.4; Pagonidis (2014) | 1 | **Passed all five checks.** After publication (Jun 2013 onwards): +0.27% per trade after costs (t = 3.2), Sharpe 0.69, max drawdown -16% vs SPY -34%, +19.6% in 2022. Paper trading from Nov 2026. |
 
+**Research note (2 pages): [docs/research-note.md](docs/research-note.md)**
+
 Full details of every trial, including the checks set in advance: [docs/trials-log.md](docs/trials-log.md).
 
 ## What the failures taught
