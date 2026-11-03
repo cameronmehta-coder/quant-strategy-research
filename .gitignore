@@ -1,0 +1,19 @@
+# Personal trading records - never public
+ibs_log.csv
+ibs_state.json
+STOP
+
+# Downloaded market data (Yahoo Finance) - not ours to republish
+*_prices*.csv
+prices.csv
+
+# Generated outputs - recreate by running the scripts
+*_results*.csv
+ibs_trades.csv
+*.png
+
+# Python and macOS clutter
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
