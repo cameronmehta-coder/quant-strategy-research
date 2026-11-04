@@ -90,3 +90,19 @@ Summary (3 Nov 2026): 6 trials across 3 strategies. Trend: 3 trials, all failed 
 - Episodes: protected in the 2015-16 sell-off (-2% vs -13%), Q4 2018 (-10% vs -19%) and 2022 (-5% vs -18%); fell as much as SPY in COVID (-36% vs -33%); lagged the COVID recovery (+38% vs +66%) and 2023 (+0.5% vs +26%)
 - Checks: FAIL 1, FAIL 2, FAIL 3, FAIL 4, PASS 5 (alphas about zero, not significant)
 - VERDICT: low vol did not beat the market risk-adjusted in investable form since 2011. Trial 1 was not just survivorship bias. A point-in-time rebuild is not justified.
+
+## Portfolio construction (4 Nov 2026) - what sits alongside IBS?
+
+Not a new strategy trial: both sleeves were already tested, so this measures known costs and benefits. Decision rule written in the script before running.
+
+- Options (50/50, sleeves rebalanced yearly): A = IBS + long-only trend (trial 1 rules); B = IBS + S&P 500 index; C = IBS alone; D = index alone. 2007-03 to 2026-11
+- Decision rule: choose A over B only if A's max drawdown is at least a third smaller AND A gives up no more than 2% a year of return
+- Results (IBS idle cash earning T-bills; the cautious no-interest case was about 0.5% a year lower and gave the same decision):
+  - A: CAGR 8.1%, vol 7.8%, Sharpe 0.86, MaxDD -12.2%
+  - B: CAGR 11.8%, vol 14.6%, Sharpe 0.74, MaxDD -26.7%
+  - C: CAGR 11.3%, vol 12.8%, Sharpe 0.79, MaxDD -20.6%
+  - D: CAGR 10.9%, vol 19.6%, Sharpe 0.55, MaxDD -55.2%
+- Correlations: IBS vs trend 0.22, IBS vs index 0.66, trend vs index 0.37
+- Crises: A was positive in the GFC (+19%), COVID (+3%) and 2022 (+5%); B fell 19% in the GFC and 11% in COVID
+- Rule: drawdown PASS (-12.2% vs -26.7%), return cost FAIL (3.6% a year vs a 2% limit)
+- DECISION: B - IBS (CFD account) + S&P 500 index fund (ISA), 50/50, rebalanced yearly. A had the best Sharpe and half the drawdown, but cost more return than the rule allowed; the rule was not changed after seeing results.
