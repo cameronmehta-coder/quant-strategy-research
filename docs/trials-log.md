@@ -106,3 +106,10 @@ Not a new strategy trial: both sleeves were already tested, so this measures kno
 - Crises: A was positive in the GFC (+19%), COVID (+3%) and 2022 (+5%); B fell 19% in the GFC and 11% in COVID
 - Rule: drawdown PASS (-12.2% vs -26.7%), return cost FAIL (3.6% a year vs a 2% limit)
 - DECISION: B - IBS (CFD account) + S&P 500 index fund (ISA), 50/50, rebalanced yearly. A had the best Sharpe and half the drawdown, but cost more return than the rule allowed; the rule was not changed after seeing results.
+
+## Fund allocation (4 Nov 2026) - DISCRETIONARY
+
+- Chosen by preference for diversification and downside protection, NOT by the pre-set rule (which picked IBS + index). Weights were not fitted to historical data.
+- GBP 500 fund, 2:1 split: about GBP 333 IBS (CFD account) + about GBP 167 long-only trend (ISA, trial 1 rules), rebalanced between sleeves yearly
+- Known trade-off from the portfolio analysis: trend lowers drawdowns and has low correlation with IBS (0.22) but cost about 3.6% a year of return at a 50/50 split in 2007-2026, mostly from holding non-US assets while US stocks led
+- Phasing: IBS paper trading (from 3 Nov 2026) -> GBP 200 live -> full allocation if live tracks the model. Trend paper-tracked monthly from the 30 Nov 2026 month-end (trend_paper.py), on US ETF proxies; mapped to London-listed UCITS funds before going live

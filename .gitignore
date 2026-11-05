@@ -17,3 +17,5 @@ __pycache__/
 *.pyc
 .DS_Store
 .venv/
+trend_paper_state.json
+trend_paper_log.csv
